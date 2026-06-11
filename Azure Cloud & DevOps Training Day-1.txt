@@ -1,0 +1,118 @@
+Azure Cloud & DevOps Training Day-1:
+=======================================
+
+Cloud Computing:
+Servers, Storage, Databases, Networking and Software through the internet, 
+
+
+On-Demand delivery of IT resources accessing through the internet.
+
+Azure
+AWS
+GCP
+
+For ur startup u req a Company website.
+To Host a Website.
+
+In Old Method:
+Buy Physical Server 
+Install Operating System 
+Configure network
+maintain power, cooling, hardware
+Replace hardware if it fails
+
+
+What is Client?
+who sends the client.
+
+What is Server?
+Who responds to that request.
+A Server serves the services to the End User.
+
+In Cloud Method:
+. Login to Azure Cloud portal
+. Create a VM or App Service
+. Deploy the Website
+. Pay only for what u use.
+
+
+Main Benefits:
+Cost Saving
+Scalability
+High Availability
+Speed
+Security
+Global Access
+Pay-as-you-go 
+
+
+Real-Time Example:
+------------------------
+Running an Online Shopping Website
+
+During Normal Days, 1 server my be enough.
+
+But during festival sales Black Friday, New Year, -> Traffic Increases.
+
+
+In Traditional Infrastructure
+u need to buy extra servers.
+After sale ends, those servers may remain unused.
+
+In Cloud
+. you can increase servers during high traffic
+. after traffic reduces, u can decrease servers
+. this is called scaling.
+
+On-Premises vs Cloud:
+--------------------- 
+On-Premises means the company owns and manages everything in its own data center. 
+
+Ex:
+A bank maintaining its own servers in its own building. 
+
+Responsibilities:
+The company Manages:
+. Physical Servers
+. Networking
+. Storage
+. OS
+. Security
+. Backup
+. Updates
+. Application
+
+Cloud:
+The cloud provider manages physical infra, and the customer uses services through the internet
+
+Ex: 
+Creating a VM in Azure instead of buying a physical server
+
+Comparison 
+On-Premises			Cloud
+===========================================
+Company buys hardware		Company rents resources
+High Initial Cost		Low Initial Cost
+Takes days/weeks to set up	Takes Minutes
+Company manages data center	Cloud provider manages data center
+Scaling is difficult.		Scaling is easy
+Hardware failure is		Cloud provider handles
+company responsibility		hardware level issues.
+
+Cloud Service Models:
+=====================
+are mainly divided into 3 models
+
+IAAS	- Infrastructure as a Service
+PAAS	- Platform as a Service
+SAAS	- Software as a Service
+
+Cloud Deployment Models:
+=======================
+are 3 main cloud deployment models
+
+Public Cloud
+Private Cloud
+Hybrid Cloud
+
+
