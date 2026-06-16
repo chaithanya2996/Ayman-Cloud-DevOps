@@ -37,6 +37,7 @@ In Cloud Method:
 
 
 Main Benefits:
+--------------
 Cost Saving
 Scalability
 High Availability
@@ -113,6 +114,70 @@ are 3 main cloud deployment models
 
 Public Cloud
 Private Cloud
-Hybrid Cloud
+Hybrid Cloud = Private Cloud + Public Cloud.
+
+
+Important Cloud Terms:
+=======================
+Scalability:
+
+Scalability means increasing or decreasing resources based on demand.
+
+2 Types of Scaling:
+
+Vertical Scaling	-> Scaling up/down
+Horizontal Scaling	-> Scaling out/in
+
+1. Vertical Scaling: 
+- adding more power to an existing server.
+- ex: increasing CPU, RAM or Storage.
+- Simple but has hardware limits
+
+
+2. Horizontal Scaling:
+- adding more servers or removing servers.
+- ex: running multiple web servers behind a load balancer
+- more flexible and commonly used in cloud platforms.
+
+
+High Availability:
+High Availability means keeping the application running with minimum downtime.
+
+Ex: If one server fails, another server continues running the application.
+
+Fault Tolerance:
+Fault Tolerance means the system continues working even if one component fails.
+
+Ex: Application running in multiple data centers (Availability Zones)
+
+Disaster Recovery:
+Disaster Recovery means restoring applications and data after a major failure
+
+Ex: If One region goes down, application can be restored in another region.
+
+Pay-as-you-go:
+Pay only for the resources you use.
+
+Ex: If you run a VM for 5 Hours, you pay only for those 5 hours.
+
+
+
+
+How this connects to Azure DevOps
+
+Azure DevOps is used to automate software delivery.
+
+
+Before learning Azure DevOps, we should understand where the application will be deployed.
+
+Azure is the platform where application run.
+Azure DevOps is the tool that automated build, test and deployment to Azure.
+
+
+
+
+
+
+
 
 

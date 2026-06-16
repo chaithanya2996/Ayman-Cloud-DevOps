@@ -1,0 +1,228 @@
+Azure Account and Portal.
+
+
+
+What is an Azure? 
+Azure is Cloud computing platform, 
+compute, storage, database, networking, ,.......
+
+
+Azure Account?
+An Azure Account is used to access Microsoft Azure Services.
+
+With an azure account, we can create and manage resource like
+
+VMs,
+Virtual Networks,
+Storage Accounts
+App Services
+Databases
+Azure DevOps Integrations,..........
+
+Azure account is like your entry pass into Microsoft Azure.
+Without an Azure Account, u cannot create or manage Azure Services.
+
+ex: If a student wants to create a Linux VM in Azure, first they need:
+
+Azure Account -> Subscription -> Resource Group -> Virtual Machine
+
+
+
+What is Azure Portal?
+=====================
+Azure Portal is a Web-based interface where users can manage Azure Services.
+
+URL:
+
+https://portal.azure.com
+
+What we can do in Azure Portal
+
+- Create resources
+- delete resources
+- start/stop vms
+- create storage accounts
+- create virtual networks
+- manage users and access
+- view billing and cost
+- open cloud shell
+- monitor resources
+- create app services
+- connect azure devops with azure services.
+
+
+Azure Resource Hierarchy:
+==========================
+
+Azure follow a hierarchy.
+
+Microsoft explains Azure management scope in four major levels: management groups, subscriptions, resource groups and resources.
+
+
+Tenant
+Subscription
+Resource Group
+Resources.
+
+
+What is Tenant?
+===============
+Example ->  
+Apartment		Azure
+Flats -> Unique ID	Tenant ID
+subscription -> payment details (billing) -> Subscriptions
+organization -> Rooms	-> groups
+things -> 		-> our resources, vm, stroages, databases, 
+
+A tenant represents an organization in Microsoft Entra ID.
+
+Earlier, Microsoft Entra ID was called Azure Active Directory.
+
+
+Simple Explanation:
+Tenant is like the main identity boundary for an organization.
+
+
+Ex:
+ABC Technologies, it may have one Microsoft Entra Tenant.
+
+Inside that tenant, user, groups, applications and subscriptions can exist.
+
+
+What is Subscription?
+=====================
+A subscription is used for billing, access control, and resource management.
+
+
+All Azure resources are created inside a subscription.
+
+Simple Terms:
+Subscription is like a billing account or container where azure services are created.
+
+Free Trail Subscription  
+Pau-As-You-Go Subscription
+Company Subscription
+Azure for Students Subscription 
+
+- One Azure Account can have one or more subscriptions.
+- Billing is connected to subscription
+- Access can be controlled at subscription level
+- Resource Groups are created inside a subscription
+
+
+What is Resource Group?
+============================
+A resource group is a logical container used to group related Azure Resources.
+
+RG is like a Folder for Azure Resources.
+
+RG-AzureDevOps-Training
+	- VM
+	- VNET
+	- Storage Account
+	- App Service
+	- SQL Database
+
+
+Why Resource Group is Important,
+- Easy to manage resources, to delete all lab resources together, easy to track cost, 
+to apply access control, to organize project-wise resources.
+
+Ex: a company-project
+
+RG-Ecommerce-Dev
+RG-Ecommerce-Test
+RG-Ecommerce-Prod
+
+What is Resource?
+======================
+A Resource is an actual Azure Service created inside a Resource Group.
+
+Ex of Azure Resources
+VM, Stroage accounts, Vent, publicip, nsg, app services, sql database, key vault, container registry
+
+RG is the container/folder
+Resource is the actual service. File inside the folder.
+
+
+Tenant vs Subscription vs Resource group vs Resource
+
+
+Azure Regions:
+===================
+
+An Azure Region is a Geographical area where Azure Datacenters are located.
+
+Ex:
+Canada Central 
+Canada East
+Central India
+South India
+East US
+West US
+UK South
+West Europe
+
+
+Availability Zones:
+====================
+AZ are physically separate datacenter inside azure regions.
+A region can have multiple zones.
+
+Azure Region
+	- Zone 1
+	- Zone 2
+	- Zone 3
+
+
+Naming Standards:
+====================
+Resource Group : RG-Training, Trianing-RG, Training-RG-Day1
+VNET: VNET-Training, Training-VNET
+VM: VM-Linux-01, Linux-VM-01
+.......
+
+
+Cloud Shell:
+==============
+Azure CLI Commands - Linux Commands
+
+entirely in lowercase letters
+
+clear
+az account show
+
+Azure Powershell Commamns - PowerShell Commands
+
+entirely in mixed combination.
+English Sentences +  Action Verbs  
+
+New-Item
+Get-Item
+
+
+
+Task:
+===========
+1. Go to Subscription -> Name "Azure Subscription 1" -> Change this with Ur Name "Ayman Subscription".
+2. Create as many Resource Groups, Along with Tags.
+3. Create a Cloud Shell and test with Bash commands
+	- az account show
+	- az group list 
+	- az group list -o table.
+4. How to create a Resource Group under cloud shell using bash? Get the command and test it. 
+
+
+
+
+Azure Services:
+====================
+Azure Storages
+
+
+
+
+
+
+
+
