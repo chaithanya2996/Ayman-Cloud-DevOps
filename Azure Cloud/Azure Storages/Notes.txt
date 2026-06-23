@@ -1,0 +1,93 @@
+Azure Storages:
+===============
+
+Storage to store Data.
+
+Files will be stored in Disk, (System, Laptop). Block Based Data.
+
+Access it through internet. 
+
+Google Drive -> Upload the data and whenever is required access it.
+
+Object Based Data.
+
+
+
+How many types of data? -> 3 Types of Data
+
+Strurtured Data: Rows and Colums, Table Format. Ex: SQL File
+Semi-Strurtured Data: Code format, Some other fomat. Ex: JSON, XML
+Un-Strurtured Data: Video, Images, Audio, ....
+
+
+What kind of Data? we can upload to Google Drive?
+3 formats.
+
+Disadvantage: 
+Storage Like Google Drive, Dropbox, OneDrive
+                15 GB         25 GB   5 GB
+Storage is Limited. Like Free and restricted about usage.
+Huge data that cannnot be uploaded in this drive.
+
+Upgrade or Purchase the Extra Storage.
+
+100 GB, 200 GB, 1 TB
+
+Purchased 100 GB ->  $200
+
+u have data of 70GB -> u still paying $200
+
+Are u under utilized or above utilized?
+
+30 GB of data is wasted, but still paying the money for 30 GB as well.
+
+100 GB -> 70 GB data uploaded -> 30 GB is wasted/unwanted space.
+
+$200 monthly.
+
+Are u accessing ur data in daily? -> No, Once in a Blue Moon will access. 
+
+Based on ur Access there should be a cost. 
+
+
+Cloud Providers came up with some new concepts.
+
+Access Tiers
+Redundancy
+
+
+Access Tiers:
+==================
+In cloud, cost optimization is not only about deleting unused resources.
+It is also about placing data in the correct tier Based on how frequently it is accessed.
+
+Azure Blob Storage provides 4 major access tiers.
+
+Hot Tier        -> frequently accessed data. 
+Cool Tier       -> infrequently accessed data that sill needs to be available immediately.
+Cold Tier       -> for rarely accessed data where storage cost should be lower, but the data should still remain online
+Archive Tier    -> is for data that is alomost never accessed but must be retained for compliance or long-term backp. Archive is the lowest storage cost, but retrival takes time because the data must be rehydrated before use.
+
+            Cost for Storage        Access for the Data.
+
+Hot Tier        Higher              Lower                   30>
+Cool Tier       High                Low                     60>
+Cold Tier       Low                 Higher                  100>
+Archive         lowest              Highest                 
+
+
+
+Redundancy:
+Azure stores multiple copies of your data so that yout data remains durable and available during failures.
+
+Multiple Redundancy Options
+
+Single Region
+    LRS - Locally Redundant Storage   99.999999999% (11 nines)
+    ZRS - Zone Redundant Storage       99.9999999999% (12 9s)
+
+Multi Region
+    GRS  - Geo Redundant Storage         99.99999999999999% (16 9s)
+    GZRS - Geo Zone Redundant Storage    99.99999999999999% (16 9s)
+
+https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy
