@@ -1,0 +1,25 @@
+Create the Infrastructure
+
+Storage Accounts 
+
+requirement:
+20 Need to Create. 
+1 Storage Account create 5 Containers (dev1,dev2,test1,test2,prod)
+
+How much time does it took? to create the requirement?
+
+5 Mins 
+
+Total 120 Mins -> 2 hrs
+
+1 Storage Account creation one-by-one some process.
+
+Manually Portal -> 100% Efficiency -> Mistake - Human Error 
+
+What if we do with Automation. 
+
+Code -> CLI / Cmdlets / IAAC
+CLI - Command Line Interface - AZ CLI
+Cmdlets - PowerShell Command (Cmdlets) - AZ PowerShell
+SDKs - Programming Languages
+IAAC - Native Azure Tools(ARM Template, Bicep Template), Other Tools (Terraform, Pulumi, OpenTofu)

@@ -91,3 +91,28 @@ Multi Region
     GZRS - Geo Zone Redundant Storage    99.99999999999999% (16 9s)
 
 https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy
+
+
+Access Tier
+Redundancy
+Lifecycle Mgmt 
+
+Genreating Keys
+
+Static Website -> Storage Explorer.
+
+
+Accessing Data usig - Shared Access Signature (SAS)
+
+https://aymanstr1acc17june2026.blob.core.windows.net/devops/city-skyline.png
+
+https://aymanstr1acc17june2026.blob.core.windows.net/devops/city-skyline.png?sp=r&st=2026-06-24T01:54:46Z&se=2026-06-24T10:09:46Z&spr=https&sv=2026-02-06&sr=b&sig=8PqCaGiGBY5Zrvu%2B4%2BJcDfmcKoYp%2FtC5dtmPNSf%2BaGo%3D
+
+
+Object Replication:
+
+2 Storage Accounts
+
+1 Primary       2 Secondary
+Data            Data
+
