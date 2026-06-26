@@ -1,0 +1,139 @@
+PowerShell
+ 
+Automation Tool -> .NET Framework
+
+is not a Case Senstive
+
+A PowerShell command is called a cmdlet (pronounced command-let).
+
+Most cmdlets follow this naming convention:
+
+Verb-Noun
+For example:
+
+Get-Process
+Verb = Get
+Noun = Process
+
+This means Get the running processes.
+
+1. Cmdlet Syntax
+
+General syntax
+
+Verb-Noun -Parameter Value
+
+Example
+
+Get-Service -Name Spooler
+
+Breakdown
+
+Part	Meaning
+Get-Service	Cmdlet
+-Name	Parameter
+Spooler	Value
+
+2. Verbs
+
+PowerShell uses standard verbs.
+
+Verb	    Meaning	        Example
+Get	        Retrieve	    Get-Process
+Set	        Modify	        Set-Location
+New	        Create	        New-Item
+Remove	    Delete	        Remove-Item
+Start	    Start something	Start-Service
+Stop	    Stop something  Stop-Process
+Restart	    Restart	        Restart-Service
+Test	    Check	        Test-Path
+
+Example
+Get-Date
+
+Returns the current date and time.
+
+3. Parameters:
+Parameters provide additional information to a cmdlet.
+
+Example
+
+Get-Process -Name chrome
+
+Here
+
+Get-Process → cmdlet
+-Name → parameter
+chrome → parameter value
+
+Multiple parameters
+
+Get-ChildItem -Path C:\Users -Recurse
+
+Meaning
+
+Search inside C:\Users
+Include all subfolders
+
+
+PowerShell-5 By Default it is available, only Windows OS
+
+PowerShell-7 Core Introduced Cross-Platform, accross Linux, MacOS
+
+Help System
+Get-Command 
+Get-Help 
+========================================================================
+
+Absolute Path:
+
+D:\Ayman-Cloud-DevOps\Automation
+
+Relative Path:
+.\script.ps1
+.\notes.txt
+
+. current directory
+.. parent directory
+\  Root directory
+~  Home directory
+
+Creating Folders & Files
+--------------------------
+
+Working with CSVs
+
+1.Reporting
+2.Bulk Operations
+
+
+
+
+
+Variables:
+==============
+Unit of memorey
+
+text strings that beging with a dollar sign ($)
+it can inlude alphanumerice charaters and special charaters
+
+
+Ex: $EmployeeList, $ServiceList, $Total_Count
+$Server_list_1
+$Server_List      $SERVER_LIST
+
+
+commands are
+--------------
+clear-variable
+get-variable
+new-variable
+remove-variable
+set-variable
+
+Operators:
+===========
+-like
+-like
+-LIKE
+-clike

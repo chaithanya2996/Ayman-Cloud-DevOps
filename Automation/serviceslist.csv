@@ -1,0 +1,38 @@
+DisplayName,Status
+Windows Virtual Audio Device Proxy Service,Stopped
+Windows Audio Endpoint Builder,Running
+Windows Audio,Running
+Windows Event Log,Running
+Windows Font Cache Service,Running
+Windows Camera Frame Server,Running
+Windows Camera Frame Server Monitor,Stopped
+Windows Mobile Hotspot Service,Stopped
+Windows License Manager Service,Running
+Windows MIDI Service,Stopped
+Windows Defender Firewall,Running
+Windows Installer,Stopped
+Windows Perception Simulation Service,Stopped
+Windows PushToInstall Service,Stopped
+Quality Windows Audio Video Experience,Running
+Windows Backup,Stopped
+Windows Security Service,Running
+Microsoft Windows SMS Router Service.,Stopped
+Windows Image Acquisition (WIA),Running
+Windows Modules Installer,Stopped
+Windows Time,Stopped
+Windows Biometric Service,Stopped
+Windows Connection Manager,Running
+Windows Connect Now - Config Registrar,Stopped
+Windows Event Collector,Stopped
+Windows Encryption Provider Host Service,Stopped
+Windows Error Reporting Service,Stopped
+Windows Health and Optimized Experiences,Running
+Windows Management Instrumentation,Running
+Windows Remote Management (WS-Management),Stopped
+Windows Insider Service,Stopped
+Windows Management Service,Stopped
+Windows Media Player Network Sharing Service,Stopped
+Windows Push Notifications System Service,Running
+Windows Push Notifications User Service_78db655,Running
+Windows Search,Running
+Windows Update,Running
