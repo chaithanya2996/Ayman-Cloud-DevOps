@@ -1,0 +1,13 @@
+Azure PowerShell:
+====================
+
+
+Using Some Services in Azure will discuss
+
+Connect to Azure Account using Azure PowerShell:
+------------------------------------------------
+Connect-AzAccount
+
+Storage Account:
+-------------------
+New-AzStorageAccount -ResourceGroupName MyResourceGroup -Name mystorageaccount -Location westus -SkuName Standard_GRS -MinimumTlsVersion TLS1_2
