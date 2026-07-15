@@ -1,0 +1,18 @@
+| Lifecycle Stage          | Common Tools                                |
+| ------------------------ | ------------------------------------------- |
+| Planning                 | Jira, Azure Boards, Trello                  |
+| Coding                   | Git, GitHub, GitLab, Azure Repos            |
+| Build                    | Maven, Gradle, MSBuild, npm                 |
+| Artifact Management      | Nexus, JFrog Artifactory, Azure Artifacts   |
+| Continuous Integration   | Jenkins, Azure Pipelines, GitHub Actions    |
+| Testing                  | JUnit, Selenium, Postman, JMeter, Cypress   |
+| Security                 | SonarQube, Snyk, Trivy, OWASP ZAP           |
+| Infrastructure as Code   | Terraform, Bicep, ARM, CloudFormation       |
+| Containers               | Docker, Podman                              |
+| Container Orchestration  | Kubernetes, AKS, EKS, GKE                   |
+| Configuration Management | Ansible, Puppet, Chef                       |
+| Deployment               | Argo CD, Flux CD, Jenkins, Azure Pipelines  |
+| Monitoring               | Prometheus, Grafana, Azure Monitor, Datadog |
+| Logging                  | ELK Stack, Splunk, Loki                     |
+| Collaboration            | Slack, Microsoft Teams                      |
+| Feedback                 | Jira, Azure Boards, ServiceNow              |

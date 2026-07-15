@@ -1,0 +1,446 @@
+Commands for DevOps Engineer:
+----------------------------------
+
+clear       -> clear the screen
+ctrl + L    -> clear the screen
+
+cd          -> change the directory
+pwd         -> print working directory/ present working directory
+whomai      -> to know which the current session belongs to
+
+sudo su -   -> we will switch to root user.
+sudo -i     -> we will switch to root user.
+sudo -s     -> we will switch to root user.
+
+1. sudo su -
+sudo su -
+What happens?
+sudo executes the su command as root.
+su - switches to the root user.
+The - (hyphen) means login shell.
+
+This loads:
+
+Root's environment
+Root's PATH
+Root's .bash_profile
+Root's .profile
+Root's .bashrc
+
+Example:
+
+$ whoami
+azureuser
+
+$ sudo su -
+
+# whoami
+root
+
+Check current directory:
+
+pwd
+
+Output
+
+/root
+
+Check PATH
+
+echo $PATH
+
+You'll see root's PATH.
+
+Without "-"
+sudo su
+
+You become root without loading the login environment.
+
+Current directory remains your directory.
+
+Example
+
+/home/azureuser
+2. sudo -i
+sudo -i
+
+This is the preferred method.
+
+It means:
+
+"Run an interactive login shell as root."
+
+It behaves almost exactly like:
+
+sudo su -
+
+It loads
+
+Root environment
+Root PATH
+Root profile
+Home directory becomes
+/root
+
+Example
+
+$ sudo -i
+
+# whoami
+root
+
+# pwd
+/root
+Why is it preferred?
+
+Because:
+
+Simpler
+Doesn't require su
+Recommended in the sudo documentation
+Uses only sudo
+3. sudo -s
+sudo -s
+
+This is different.
+
+It starts a shell as root, but does not create a login shell.
+
+That means:
+
+Current environment is mostly preserved.
+
+Example
+
+$ pwd
+/home/azureuser
+
+$ sudo -s
+
+# pwd
+/home/azureuser
+
+Notice:
+
+You are root
+
+root
+
+But you're still in
+
+/home/azureuser
+
+It also keeps many environment variables.
+
+Example
+
+echo $HOME
+
+May still show
+
+/home/azureuser
+
+depending on the system configuration.
+
+Difference in Environment
+
+Suppose your user has
+
+export JAVA_HOME=/opt/java17
+sudo -s
+
+Usually keeps
+
+JAVA_HOME=/opt/java17
+sudo -i
+
+Starts fresh.
+
+JAVA_HOME
+
+may not exist unless root has it configured.
+
+Example Comparison
+
+Current user
+
+whoami
+azureuser
+
+Current directory
+
+pwd
+/home/azureuser/projects
+Using sudo -s
+sudo -s
+
+Now
+
+whoami
+root
+pwd
+/home/azureuser/projects
+Using sudo -i
+sudo -i
+
+Now
+
+whoami
+root
+pwd
+/root
+Using sudo su -
+sudo su -
+
+Now
+
+whoami
+root
+pwd
+/root
+Visual Comparison
+Current User
+--------------
+User: azureuser
+PWD : /home/azureuser
+
+              |
+              |
+     +--------+--------+
+     |        |        |
+ sudo -s   sudo -i  sudo su -
+     |        |        |
+Root Shell Root Login Root Login
+     |        |        |
+PWD remains  /root    /root
+Environment  Fresh    Fresh
+
+| Command     | Recommendation       | Reason                                                       |
+| ----------- | -------------------- | ------------------------------------------------------------ |
+| `sudo -i`   | ⭐ Best choice        | Officially recommended, clean root login shell               |
+| `sudo su -` | Good                 | Works similarly to `sudo -i`, but unnecessarily invokes `su` |
+| `sudo -s`   | Good for quick tasks | Keeps your current environment and working directory         |
+
+
+========================================================================================================
+1. File and Directory Operations Commands
+-----------------------------------------
+
+ls              : List files and directories.
+
+-l: Long format listing.
+-a: Include hidden files hidden ones
+-h: Human-readable file sizes.
+
+ls -al              : Displays files and directories with detailed information.
+ls -a               : shows all files and directories, including hidden
+ls -lh             : Displays file sizes in a human-readable format.
+ls -lt             : Displays files
+ls -ltr         : reverse sorting
+
+ls new*         : to list files starting with new
+
+
+-rw-r--r--. 1 root     root          0 Dec 21 13:39 file1
+drwxr-xr-x. 2 root     root          6 Dec 21 13:39 test
+
+- represent file
+d represent directory
+
+
+cd                : Change directory.
+touch filename            : to create a empty file
+pwd             : Print current working directory.
+mkdir            : Create a new directory.
+cd ..            : move back to one directory
+
+ mkdir hello
+
+rmdir foldername    : delete directory
+
+ rmdir hello
+
+rm        
+-r: Remove directories recursively.
+-f: Force removal without confirmation.
+
+rm            : deletes the file
+rm -r             : deletes the directory and its contents.
+rm -f            : forcefully deletes the file without confirmation.
+
+cp            : Copy files and directories.
+
+Ex:  cp file.txt file2.txt
+     cp file.txt /test/file.txt
+
+.            : Present location
+
+cp -r             : copies the directory “directory” and its contents to the specified destination.
+
+mv            : Move/rename files and directories.
+
+Ex: mv file1 testfolder/
+    mv file1 file5
+
+===================
+touch            : Create an empty file .
+
+Ex: touch file        : create single file
+    touch file{1..5}    : Create 5 files at a time
+
+=====================
+
+cat            : View the contents of a file.
+
+head            : Display the first few lines of a file.
+-n: Specify the number of lines to display.
+
+head file.txt       : Shows the first 10 lines of the file “file.txt”.
+head -n 5 file.txt     : Displays the first 5 lines of the file “file.txt”.
+
+tail            : Display the last few lines of a file.
+-n: Specify the number of lines to display.
+
+tail file.txt         : Shows the last 10 lines of the file “file.txt”.
+tail -n 5 file.txt     : Displays the last 5 lines of the file “file.txt”.
+
+
+=======================================
+sort             : Sorting the content in the file
+
+Ex: create a file with alphabets inside
+A
+C
+F
+B
+G
+
+    sort file.txt    : sorting content
+    sort -r file.txt     : reverse sort
+
+Ex: create a file with alphabets inside duplicates
+A
+A
+C
+F
+F
+B
+B
+G
+
+Removing duplicates
+
+============================
+
+sort file.txt | uniq
+
+split             : to split the files into multiple files
+
+Ex:  split -l 4 file.txt   --> it will split into multiple files with lines of 4
+     ls
+
+==============================
+
+cmp and diff [seeing 2 files are same or not and see the difference]
+
+--> create 2 files : file1 --> this is madhan sir, file2 --> this is madhan aws devops trainer
+
+Ex:   cmp file1 file2  --> it will show only files are same are not [cmp: EOF on file1 - if it shows like this, there is a diff]
+      diff file1 file2  ---> shows the difference
+      diff -u file1 file2  ---> shows line by line comparison
+
+=============================
+Coming to home directory
+
+Ex: if you are in some other directory say cd /etc/
+just do cd --> you will come to home directory . ~ shows home directory
+
+============================
+
+find            :
+-name: Search by filename.
+-type: Search by file type.
+
+find /path/to/search -name “*.txt”  : Searches for all files with the extension “.txt” in the specified directory.
+
+find /home/john -name 'file*'  :  Find files in /home/john that start with "file".
+
+Ex: find ./ -name test.txt  : in current directory ./ find test.txt
+
+========================
+
+
+touch file1    : to create a file
+ls/ll        : to list the files
+cat file1    : to show content of a file.
+more file1    : to show content of a file.
+cat > filename  : to insert the content to a file
+cat>>file1    : to append the content to a file.    
+cp file1 file3    : to copy content from file1 to file3
+mv file1 madhan    : to rename file1 to madhan
+rm file1    : to remove a file
+rm file1 -f    : to remove a file forcefully
+touch file{1..10}: to create file1 to file10
+rm * -f        : to remove all files
+wc -l file1    : to show the lines, words and characters of a file
+cat -n file1     : to print the line numbers
+
+=================
+history        : to print all the commands user used for the current session
+ Ex: history
+     history | grep word " : search for a word in history
+====================
+
+help        : help
+ Ex: ls --help
+man
+ Ex: man ls
+
+=====================
+
+which         : to see the executable path
+
+Ex: which ls
+
+====================
+
+bc    : calculator [yum install -y bc]
+
+==================
+cal    : calendar
+
+Ex: cal
+    cal APRIL 1986
+
+
+head file1    : to print top 10 lines of a file
+head -5 file1    : to print top 5 lines of a file
+head -12 file1    : to print top 12 lines of a file
+
+tail file1    : to print bottom 10 lines of a file
+tail -5 file1    : to print bottom 5 lines of a file
+tail -12 file1    : to print bottom 12 lines of a file
+
+
+
+pwd        : to print working directory
+mkdir dir1    : to create a folder
+cd dir1        : to switch to dir1
+cd ..        : to switch one folder back
+cd ../..        : to switch to multiple folders
+cd /        : switch to root directory , see many directories inside root
+
+Absolute path : entire path  Ex: cd /home/ec2-user/newdir/sampledir
+Relative Path : just directory name Ex: cd /newdir
+
+
+sudo -i        : to switch for root user
+who or w    : to show which user logged to our server
+ip addr/ifconfig: to show the ip address
+hostname -i    : to show the ip address
+hostname    : to show the hostname
+hostnamectl set-hostname madhan: to set hostname as madhan
+sudo -i        : to login to hostname
+hostname    : to show the hostname    
+clear              : to clear the screen
+

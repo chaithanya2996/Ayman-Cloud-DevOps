@@ -1,0 +1,30 @@
+VCS:
+- Tracks and mangged the code changes.
+- automcatically records every change in a special database.
+- allows reviewing older version of code.
+- enable comparing changes between versions
+- provides rollback to stable state if issues occur.
+
+it is the process of maintaining multiple version of the code.
+check-in/psuhing the code 
+pulling the code. 
+
+its preserver older and latest versions of the code.
+so that any time we can swith which ever version we want.
+
+keep a track of who is making what kind of changes.
+
+2 types: 
+CVCS
+DVCS
+
+Git:
+- Distributed Version Control System.
+- Created by Linus Torvalds
+- C Language
+- it is platform independent, free and open source
+- 2005
+- 3rd generation of VCS.
+
+
+GitHub

@@ -1,0 +1,4 @@
+Deploy a Static Website in Linux:
+========================================
+
+WebServer -> Nginx, Apache2, Tomcat,....

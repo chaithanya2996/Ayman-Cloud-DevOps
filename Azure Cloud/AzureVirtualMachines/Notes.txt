@@ -50,3 +50,49 @@ Advantages:
 -------------------------
 Easy to install
 Ideal for learning, testing, and development
+
+How to create an VM in Azure:
+Linux Server VM 
+Windows Server VM
+
+Resizing of VM 
+1. Stop the VM if its running 
+2. will perform Resizing VM.
+
+Deploying Static Website in Windows Server:
+---------------------------------------------------
+WebServer 
+
+IIS Package = Internet Information Services Package 
+
+ServerManager -> install it.
+
+----------------------------------------
+Connecting of Linux Server, I have diff steps is there.
+
+multiple ways
+
+powershell
+cmd
+putty
+mobaxterm
+superputty
+git bash
+
+
+Syntax for Connecting Linux Machine/VM:
+-------------------------------------------
+
+ssh username@vms_public_ip_address
+ssh username@vms_private_ip_address
+
+File System Hirarchy
+=======================
+
+Editors 
+===============
+Notepad, Notepad++, VSCOde
+
+Linux: Vi, Vim, Nano, ...
+
+
