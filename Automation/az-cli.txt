@@ -1,0 +1,38 @@
+azure cli:
+============
+
+looks like an Linux Commands
+
+ls, touch, ....
+
+login azure using az cli:
+az login
+
+az login --use-device-code
+
+create an resource group in azure:
+az group create --name Ayman-RG1 --location canadacentral 
+
+
+az storage account create -n ayman1str21july2026 -g Ayman-RG1 -l canadacentral --sku Standard_LRS
+
+az storage account create -n madhan1str123july2026 -g madhan-rg1 -l centralindia --sku Standard_LRS
+
+
+
+az vm list-sizes --location eastus --output table
+
+az vm create \
+--resource-group Ayman-RG1 \
+--name UbuntuVM \
+--image Ubuntu2404 \
+--admin-username madhan \
+--admin-password "Password@123456"
+
+az vm create `
+--resource-group Ayman-RG1 `
+--name UbuntuVM `
+--image Ubuntu2404 `
+--size Standard_B1s `
+--admin-username madhan `
+--admin-password "Password@123456"

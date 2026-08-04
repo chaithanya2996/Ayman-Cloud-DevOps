@@ -23,3 +23,12 @@ CLI - Command Line Interface - AZ CLI
 Cmdlets - PowerShell Command (Cmdlets) - AZ PowerShell
 SDKs - Programming Languages
 IAAC - Native Azure Tools(ARM Template, Bicep Template), Other Tools (Terraform, Pulumi, OpenTofu)
+
+
+Azure Native IAAC:
+---------------------
+ARM Templates >200 lines
+Azure Bicep   70 Lines
+
+Other Tool
+Terraform

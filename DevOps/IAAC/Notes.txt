@@ -1,0 +1,99 @@
+Infrastrucuture:
+----------------------------
+
+resources used to run our application on cloud.
+eg: VM, Storage, LB, VNet, NSG, .....
+
+In general we used to deploy infra on manual 
+
+Manual:
+- Time Consume
+- Manual Work
+- Commiting Mistakes
+
+Automate  --> Terraform  --> Code  --> HCL
+
+Template -> Inside we have instructions -> Templatefile -> Commands to execute
+
+Terraform: 
+---------------
+Its a tool used to make infrastrucutre automation
+Its a Free and Not Open Source.
+Its a Platform Independent
+2014 Introduced
+who: Mitchel Hashimoto
+Owned: Hashicorp  --> Recently IBM is Maintaning
+IAAC / IAC Tool 
+Its a Cloud Agonostic (It can used to work with any cloud and even on Prem)
+
+
+New-AzResourceGroup `
+    -Name "TF-RG" `
+    -Location "Canada Central"
+
+$Credential = Get-Credential
+
+New-AzVM `
+    -ResourceGroupName "TF-RG" `
+    -Name "Terraform-VM" `
+    -Location "Canada Central" `
+    -Image "2025-datacenter" `
+    -Size "Standard_B2s" `
+    -Credential $Credential `
+    -OpenPorts 3389
+
+
+Terraform Workflow:
+-------------------
+terraform init 
+terraform plan
+terraform validate
+terraform fmt
+terraform apply
+terraform destroy
+
+
+working with azure cloud using terraform:
+----------------------------------------------
+pre-requisites
+- terraform should be installed
+- azure cli/pwsh should be installed
+- vs code -> terraform extensions should be installed
+
+https://registry.terraform.io/providers/hashicorp/azurerm/5.0.0
+
+
+
+| Constraint | Meaning                        |
+| ---------- | ------------------------------ |
+| `=5.0.0`   | Exactly version 5.0.0          |
+| `>=5.0.0`  | Version 5.0.0 or newer         |
+| `>5.0.0`   | Any version newer than 5.0.0   |
+| `<6.0.0`   | Any version earlier than 6.0.0 |
+| `~>5.0`    | Latest compatible 5.x release  | 5.1,5.2,...,5.9
+| `~>5.0.0`  | Patch updates only (5.0.x)     | 5.1.x {0..9}
+
+5.1.7
+
+~>5.0 = 5.0 to 5.9
+~>5.0.0 = 5.0.0 to 5.9.9
+
+4.9.9 and 6.0.0
+
+
+variables & data types
+
+
+variable "your-var-name" {
+    default = "any-default-values"
+    type = (optional) string
+}
+
+datatypes
+
+string
+list
+set
+map
+object
+tuple

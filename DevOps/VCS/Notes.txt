@@ -28,3 +28,18 @@ Git:
 
 
 GitHub
+
+==========================================================
+
+
+on master Created a few commits
+a --> b
+
+test branch and created a few commits
+a --> b --> c --> d --> e --> f --> g
+
+Git Sqaush
+
+Merge Conflicts. 
+
+Terraform and Cloud Concepts.
