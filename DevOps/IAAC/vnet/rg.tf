@@ -1,4 +1,4 @@
-resource "azurerm_resouce_group" "myrg" {
-  name = "${var.rg_name}"
-  location = "${var.location}"
+resource "azurerm_resource_group" "myrg" {
+  name = "ayman-tf-rg1"
+  location = "canada central"
 }
