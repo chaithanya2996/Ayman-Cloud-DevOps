@@ -97,3 +97,22 @@ set
 map
 object
 tuple
+
+Terraform Workspaces
+
+Project Requrement
+Full Stack Project
+
+3 RG
+3 VNet,Subnet
+10 VMs
+4 StorageAccounts
+
+Environment
+
+Dev, Test, Stagging, Pre-Prod, Prod Environment 
+terraform.tfstate.dev
+terraform.tfstate.stage
+terraform.tfstate.prd
+
+By Default will having default Workspace.
