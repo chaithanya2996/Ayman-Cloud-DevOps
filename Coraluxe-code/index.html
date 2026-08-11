@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coraluxe - Resort Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Yeseva+One&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Start -->
+     <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="mb-0 text-primary">Coraluxe</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Rooms</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">Rooms Grid</a>
+                            <a href="#" class="dropdown-item">Room Details</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">Blog Grid</a>
+                            <a href="#" class="dropdown-item">Blog Details</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">FAQs</a>
+                            <a href="#" class="dropdown-item">Gallery</a>
+                            <a href="#" class="dropdown-item">Services</a>
+                            <a href="#" class="dropdown-item">Our Staff</a>
+                            <a href="#" class="dropdown-item">Offers/Packages</a>
+                            <a href="#" class="dropdown-item">Reservation</a>
+                            <a href="#" class="dropdown-item">Testimonial</a>
+                            <a href="#" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link">Contact</a>
+                </div>
+                <a class="btn btn-primary d-none d-lg-flex" href="https://htmlcodex.com/downloading/?item=3928">Buy Pro Version</a>
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="row h-100 align-items-center justify-content-center">
+                            <div class="col-10 col-md-8">
+                                <h1 class="display-1 text-white animated slideInDown">Escape to Pure Paradise</h1>
+                                <p class="fs-3 mb-5 animated slideInDown">Luxury Villas Above Turquoise Waters</p>
+                                <a href="" class="btn btn-primary py-3 px-4 animated slideInDown">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="row h-100 align-items-center justify-content-center">
+                            <div class="col-10 col-md-8">
+                                <h1 class="display-1 text-white animated slideInDown">Stay In Island Luxury</h1>
+                                <p class="fs-3 mb-5 animated slideInDown">Private Villas With Stunning Views</p>
+                                <a href="" class="btn btn-primary py-3 px-4 animated slideInDown">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+     </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid rounded position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <p class="fs-4 font-dancing-script text-primary mb-0">Welcome</p>
+                    <h1 class="display-4 mb-0">Coral Crown Resort</h1>
+                    <h3>Baa Atoll, Maldives</h3>
+                    <h6 class="mb-4">One of the most beautiful coral beaches in the world</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae tempor justo. Curabitur vehicula est vitae tincidunt venenatis.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae tempor justo. Curabitur vehicula est vitae tincidunt venenatis.</p>
+                    <img class="img-fluid mb-2" src="img/signature.jpg" alt="">
+                    <p class="mb-0">Hotel Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-fluid fact-counter py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn-lg-square bg-primary rounded mx-auto mb-3">
+                        <i class="fas fa-door-open text-white"></i>
+                    </div>
+                    <h1 class="display-5 text-white">1234</h1>
+                    <h5 class="text-white mb-0">Total Rooms</h5>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn-lg-square bg-primary rounded mx-auto mb-3">
+                        <i class="fas fa-user-check  text-white"></i>
+                    </div>
+                    <h1 class="display-5 text-white">1234</h1>
+                    <h5 class="text-white mb-0">Happy Guests</h5>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn-lg-square bg-primary rounded mx-auto mb-3">
+                        <i class="fas fa-user-friends text-white"></i>
+                    </div>
+                    <h1 class="display-5 text-white">1234</h1>
+                    <h5 class="text-white mb-0">Team Members</h5>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <div class="btn-lg-square bg-primary rounded mx-auto mb-3">
+                        <i class="fas fa-trophy text-white"></i>
+                    </div>
+                    <h1 class="display-5 text-white">1234</h1>
+                    <h5 class="text-white mb-0">Award Won</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact Start -->
+
+
+    <!-- Room Start -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fs-4 font-dancing-script text-primary mb-0">Our Rooms</p>
+                <h1 class="display-4 mb-5">Private Villas With Ocean Views</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="room-item bg-white rounded d-flex h-100 p-4">
+                        <div class="bg-light rounded overflow-hidden flex-shrink-0 d-flex flex-column justify-content-between text-center pb-4 me-3" style="width: 80px">
+                            <div class="bg-primary text-white py-3">
+                                <h5 class="text-white mb-0">$100</h5>
+                                <small>Per Night</small>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-bed text-primary"></i>
+                                <p class="small mb-0">1 Bed</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-bath text-primary"></i>
+                                <p class="small mb-0">1 Bath</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-fan text-primary"></i>
+                                <p class="small mb-0">AC</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-wifi text-primary"></i>
+                                <p class="small mb-0">Wifi</p>
+                            </div>
+                        </div>
+                        <div class="room-detail">
+                            <div class="position-relative rounded overflow-hidden mb-3">
+                                <img class="img-fluid w-100" src="img/room-1.jpg" alt="">
+                                <div class="position-absolute top-0 start-0 text-white small py-1 px-3">20 X 25 Sqft</div>
+                            </div>
+                            <a href="#" class="h5 d-inline-block">Honeymoon Villa</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla sed mollis non.</p>
+                            <a href="#" class="btn btn-primary w-100 py-2">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="room-item bg-white rounded d-flex h-100 p-4">
+                        <div class="bg-light rounded overflow-hidden flex-shrink-0 d-flex flex-column justify-content-between text-center pb-4 me-3" style="width: 80px">
+                            <div class="bg-primary text-white py-3">
+                                <h5 class="text-white mb-0">$100</h5>
+                                <small>Per Night</small>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-bed text-primary"></i>
+                                <p class="small mb-0">1 Bed</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-bath text-primary"></i>
+                                <p class="small mb-0">1 Bath</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-fan text-primary"></i>
+                                <p class="small mb-0">AC</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-wifi text-primary"></i>
+                                <p class="small mb-0">Wifi</p>
+                            </div>
+                        </div>
+                        <div class="room-detail">
+                            <div class="position-relative rounded overflow-hidden mb-3">
+                                <img class="img-fluid w-100" src="img/room-2.jpg" alt="">
+                                <div class="position-absolute top-0 start-0 text-white small py-1 px-3">20 X 25 Sqft</div>
+                            </div>
+                            <a href="#" class="h5 d-inline-block">Deluxe Suite</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla sed mollis non.</p>
+                            <a href="#" class="btn btn-primary w-100 py-2">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="room-item bg-white rounded d-flex h-100 p-4">
+                        <div class="bg-light rounded overflow-hidden flex-shrink-0 d-flex flex-column justify-content-between text-center pb-4 me-3" style="width: 80px">
+                            <div class="bg-primary text-white py-3">
+                                <h5 class="text-white mb-0">$100</h5>
+                                <small>Per Night</small>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-bed text-primary"></i>
+                                <p class="small mb-0">1 Bed</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-bath text-primary"></i>
+                                <p class="small mb-0">1 Bath</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-fan text-primary"></i>
+                                <p class="small mb-0">AC</p>
+                            </div>
+                            <div class="text-center mx-auto">
+                                <i class="fa fa-wifi text-primary"></i>
+                                <p class="small mb-0">Wifi</p>
+                            </div>
+                        </div>
+                        <div class="room-detail">
+                            <div class="position-relative rounded overflow-hidden mb-3">
+                                <img class="img-fluid w-100" src="img/room-3.jpg" alt="">
+                                <div class="position-absolute top-0 start-0 text-white small py-1 px-3">20 X 25 Sqft</div>
+                            </div>
+                            <a href="#" class="h5 d-inline-block">Sea View Room</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla sed mollis non.</p>
+                            <a href="#" class="btn btn-primary w-100 py-2">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Room End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-8 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="fs-4 font-dancing-script text-primary mb-0">Feature</p>
+                        <h1 class="display-4 mb-4">Relax. Refresh. Renew.</h1>
+                        <p class="mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae tempor justo. Curabitur vehicula est vitae tincidunt venenatis.</p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-car fa-3x text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">Pick & Drop Facility</h5>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-hamburger fa-3x text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">Breakfast Included</h5>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-wifi fa-3x text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">High Speed Wifi</h5>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-swimmer fa-3x text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">Swimming Pool</h5>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fs-4 font-dancing-script text-primary mb-0">Activities</p>
+                <h1 class="display-4 mb-5">Dive Into Island Adventures</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="service-item rounded text-center h-100 px-4 py-5">
+                        <i class="fas fa-hamburger fa-3x text-primary mb-3"></i>
+                        <h5>Food & Restaurant</h5>
+                        <hr class="w-25 mx-auto text-primary" style="height: 2px;">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed.</span> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="service-item rounded text-center h-100 px-4 py-5">
+                        <i class="fas fa-heartbeat fa-3x text-primary mb-3"></i>
+                        <h5>Beauty & Health</h5>
+                        <hr class="w-25 mx-auto text-primary" style="height: 2px;">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed.</span> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="service-item rounded text-center h-100 px-4 py-5">
+                        <i class="fas fa-dumbbell fa-3x text-primary mb-3"></i>
+                        <h5>Fitness Center</h5>
+                        <hr class="w-25 mx-auto text-primary" style="height: 2px;">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed.</span> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="service-item rounded text-center h-100 px-4 py-5">
+                        <i class="fas fa-birthday-cake fa-3x text-primary mb-3"></i>
+                        <h5>Event Rooms</h5>
+                        <hr class="w-25 mx-auto text-primary" style="height: 2px;">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed.</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Start -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid bg-light overflow-hidden px-lg-0">
+        <div class="container contact px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-8 contact-text py-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="fs-4 font-dancing-script text-primary mb-0">Contact</p>
+                        <h1 class="display-4 mb-4">Get in Touch Today</h1>
+                        <p class="fs-4">Receive messages instantly with our PHP and Ajax contact form - available in the <a href="https://htmlcodex.com/downloading/?item=3928">Pro Version</a> only.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-6 control-group">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 control-group">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 control-group">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Mobile" />
+                                    <label for="mobile">Mobile</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 control-group">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" />
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12 control-group">
+                                <div class="form-floating">
+                                    <textarea style="height: 165px" class="form-control" id="message" placeholder="Message"></textarea>
+                                    <label for="message">Leave a message here</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                        frameborder="0" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fs-4 font-dancing-script text-primary mb-0">Blog Post</p>
+                <h1 class="display-4 mb-5">Discover Hidden Island Beauty</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="blog-item rounded h-100 p-4">
+                        <div class="blog-img position-relative">
+                            <img class="img-fluid w-100 rounded-top" src="img/blog-1.jpg" alt="">
+                            <div class="blog-meta d-flex rounded-bottom overflow-hidden">
+                                <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary px-4">
+                                    <h5 class="text-white mb-n1">01</h5>
+                                    <p class="text-white mb-0">Jan</p>
+                                </div>
+                                <div class="bg-light w-100 h-50 d-flex align-items-center align-self-end">
+                                    <small class="ms-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
+                                    <small class="ms-3"><i class="fa fa-folder text-primary me-2"></i>Travel</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="h5 d-inline-block">How to book a resort in Maldives at the best price</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in mauris.</p>
+                        <a href="" class="btn btn-primary px-4">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="blog-item rounded h-100 p-4">
+                        <div class="blog-img position-relative">
+                            <img class="img-fluid w-100 rounded-top" src="img/blog-2.jpg" alt="">
+                            <div class="blog-meta d-flex rounded-bottom overflow-hidden">
+                                <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary px-4">
+                                    <h5 class="text-white mb-n1">01</h5>
+                                    <p class="text-white mb-0">Jan</p>
+                                </div>
+                                <div class="bg-light w-100 h-50 d-flex align-items-center align-self-end">
+                                    <small class="ms-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
+                                    <small class="ms-3"><i class="fa fa-folder text-primary me-2"></i>Travel</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="h5 d-inline-block">Top seven hotel trends to watch in 2045</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in mauris.</p>
+                        <a href="" class="btn btn-primary px-4">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="blog-item rounded h-100 p-4">
+                        <div class="blog-img position-relative">
+                            <img class="img-fluid w-100 rounded-top" src="img/blog-3.jpg" alt="">
+                            <div class="blog-meta d-flex rounded-bottom overflow-hidden">
+                                <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary px-4">
+                                    <h5 class="text-white mb-n1">01</h5>
+                                    <p class="text-white mb-0">Jan</p>
+                                </div>
+                                <div class="bg-light w-100 h-50 d-flex align-items-center align-self-end">
+                                    <small class="ms-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
+                                    <small class="ms-3"><i class="fa fa-folder text-primary me-2"></i>Travel</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="h5 d-inline-block">Five best things to do in Baa Atoll, Maldives</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in mauris.</p>
+                        <a href="" class="btn btn-primary px-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Get in Touch</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="bi bi-twitter-x"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded border p-1 w-100" src="img/gallery-sm-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded border p-1 w-100" src="img/gallery-sm-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded border p-1 w-100" src="img/gallery-sm-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded border p-1 w-100" src="img/gallery-sm-4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded border p-1 w-100" src="img/gallery-sm-5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded border p-1 w-100" src="img/gallery-sm-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** The author’s attribution link below must remain intact on your website. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version from https://htmlcodex.com/downloading/?item=3928 ***/-->
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
