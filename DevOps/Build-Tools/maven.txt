@@ -1,0 +1,62 @@
+Maven is a build tool
+Purpose: Build
+
+Build Automation tool
+Project Management tool
+
+maven will download and install necessary dependencies
+Maven = POM.xml -> Project Object Model
+
+POM consists of -> dependencies, plugins, configurations, project details
+
+.java = Basic raw code
+Compile = .class  = executable files
+.jar = group of .class files [Works for Backend]
+
+.war = FE + BE
+        html,css,js
+        Java
+
+
+Build LifeCycles
+Build Phases
+Maven Goals
+
+Validate
+Compile : .class [target]
+Test
+Package: war
+Install: /root/.m2
+Deploy
+Clean
+
+
+https://github.com/chaithanya2996/java-maven-code
+
+steps of execution:
+    1  apt update
+    2  java -version
+    3  apt install openjdk-17-jdk -y
+    4  java -version
+    5  apt install maven -y
+    6  mvn -version
+    7  mvn
+    8  git clone https://github.com/chaithanya2996/java-maven-code.git
+    9  ls
+   10  cd java-maven-code/
+   11  mvn validate
+   12  mvn compile
+   13  apt install tree -y
+   14  ls
+   15  tree
+   16  mvn test
+   17  tree
+   18  mvn package
+   19  tree
+   20  mvn install
+   21  tree
+   22  ls -la
+   23  mvn clean
+   24  tree
+   25  mvn clean package
+   26  tree

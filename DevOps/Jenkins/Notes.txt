@@ -1,0 +1,63 @@
+JENKINS IS A CI/CD tool
+
+REALITY: JENKINS IS ONLY FOR CI
+
+CI : CONTINOUOS INTEGRATION = CONTINOUOS BUILD + CONTINOUOS TEST (OLD CODE WITH NEW CODE)
+
+
+DAY-1: 100 LINES : BUILD + TEST
+DAY-2: OLD LINES 100 + NEW LINES 100 = 200 LINES : BUILD + TEST
+DAY-3: OLD LINES 200 + NEW LINES 100 = 300 LINES : BUILD + TEST
+
+BEFORE CI:
+MANUAL PROCESS
+TIME WASTE 
+
+AFTER CI:
+AUTOMATED PROCESS
+TIME SAVING
+
+CD: CONTINOUOS DELIVERY/DEPLOYMENT
+
+ENV:
+PRE-PROD/NON-PROD
+DEV : developers
+QA  : testers
+UAT : client
+
+STAGE: 
+
+LIVE/PROD ENV:
+PROD    : end-users
+
+CONTINOUOS DELIVERY     : Deploying the application to production in manual.
+CONTINOUOS DEPLOYMENT   : Deploying the application to production in automatic.
+
+HUMAN:
+WAKEUP --> DAILY ACTIVITIES --> BREAKFAST --> OFFICE --> LUNCH --> WORK --> SIGNOFF
+
+PIPELINE:
+-----------
+CODE --> BUILD --> TEST --> ARTIFACT --> DEPLOY
+
+STEP BY STEP EXECUTION OF A PROCESS.
+SERIES OF EVENTS INTERLINKED WITH EACH OTHER.
+
+JENKINS:
+IT IS A FREE AND OPEN-SOURCE TOOL.
+IT IS A PLATFORM INDEPENDENT
+IT CAN AUTOMATE ENTRE SDLC
+
+WRITTEN ON JAVA.
+
+JAVA: java17/21
+
+DEFAULT PATH: /var/lib/jenkins
+
+CONNECT:
+COPY-PUBLIC-IP:8080 (BROWSER)
+cat /var/lib/jenkins/secrets/initialAdminPassword (Server)
+
+paster password on browser --> installing plugins -->  user details -- > save --> 
+save -- > start using jenkins
+
