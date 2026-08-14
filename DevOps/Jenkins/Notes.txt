@@ -61,3 +61,20 @@ cat /var/lib/jenkins/secrets/initialAdminPassword (Server)
 paster password on browser --> installing plugins -->  user details -- > save --> 
 save -- > start using jenkins
 
+
+jobs practices
+--------------------
+firstjob -ececute shell
+build with parameters
+choide paramenter
+schduling the job
+
+Restore Deleted Job
+Integrating with GitHub
+Varibles
+
+Transfering files from Jenkins to Remote Server
+- setups connection from jenkins to remote server
+- install ssh plugins
+- create a job to copy files to remote server
+
