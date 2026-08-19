@@ -1,0 +1,14 @@
+Pipeline GUI
+
+Pipeline Script
+
+groovy script
+yaml script
+
+groovy jenkins
+
+
+echo "Welcome to DevOps trainings"
+
+sh "mvn clean package"
+

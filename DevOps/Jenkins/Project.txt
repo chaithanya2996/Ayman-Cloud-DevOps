@@ -1,0 +1,12 @@
+Using Groovy Script
+
+try to create azure resources like
+- AZ Resource Group
+- AZ Storage Account
+- AZ Storage Account with container creation and upload some file
+- AZ Virtual Machine with Static Website Deployment.
+
+
+Using Terraform:
+
+- Terraform With Azure Scripts using Groovy

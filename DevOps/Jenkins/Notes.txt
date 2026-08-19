@@ -78,3 +78,224 @@ Transfering files from Jenkins to Remote Server
 - install ssh plugins
 - create a job to copy files to remote server
 
+Jenkins Will work on Port 8080
+
+8090 8888 
+
+TO search a file -- find / -name Jenkins.service
+
+vi /usr/lib/systemd/system/jenkins.service
+line 72 (8080=8069)
+systemctl daemon-reload
+systemctl restart jenkins.service
+
+======================================================
+
+Pipeline Syntax
+==============
+
+To write the pipeline we use DSL (Domain specific Language)
+
+We use GROOVY Script for Jenkins pipeline
+
+It consists of blocks that includes stages : stages are stage1 = code , stage2 = build, stage3 = test, stage4 = artifact, stage5= deployment
+it includes () & {}
+
+
+Create a job -- select Pipeline --> under script --> use below or --> try sample pipeline and explain
+
+short cut to remember how to create a pipeline :
+PASSS -  PAS3
+Pipeline,
+Agent,
+Stages,
+Stage ,
+Steps
+
+Below pipeline has one stage
+
+pipeline {
+    agent any
+   
+    stages {
+        stage('one') {
+            steps {
+                sh 'touch file1'
+            }
+        }
+    }
+}
+
+--> now, file1 is created at cd /var/lib/jenkins/workspace/
+
+=============
+BLUE OCEAN
+===============
+
+install blue ocean plugin to see stage
+
+
+
+Can have single stage or multi stage, depend upon requirement
+
+pipeline {
+    agent any
+    stages {
+        stage('one'){
+            steps {
+                sh 'touch file1'
+            }
+        }
+        stage('two'){
+            steps {
+                sh 'ls -al'
+            }
+        }
+        stage('three'){
+            steps{
+                sh 'df -h'
+            }
+        }
+    }
+}
+
+For syntax, click on pipeline syntax and select git (in git master branch should be there), give info and generate sntax
+
+if you need master branch in git
+
+Create a new public repo --> in local clone it --> copy pom and src --> git add . --> git commit --> git push origin master
+then you will have master in github, but in general in github default branch is main
+
+
+
+==============
+Now create a CI Pipeline
+==============
+
+CODE --> BUILD --> TEST -->Code Review --> ARTIFACT --> Deployment
+
+
+pipeline {
+    agent any
+    stages {
+        stage('Clone Git Repo') {
+            steps {
+                echo 'Cloning Git Repository'
+            }
+        }
+        stage('Building') {
+            steps {
+                echo 'Building the Project'
+            }
+        }
+        stage('Code Test') {
+            steps {
+                echo 'Testing the Project'
+            }
+        }
+        stage('Code Review') {
+            steps {
+                echo 'Code Quality Checking'
+            }
+        }
+        stage('Artifact') {
+            steps {
+                echo 'Generating war file'
+            }
+        }
+        stage('Deployment') {
+            steps {
+                echo 'Code is deployed'
+            }
+        }
+    }
+}
+
+
+
+
+
+pipeline {
+    agent any
+======================
+
+
+pipeline {
+    agent any
+    stages {
+        stage('checkout') {
+            steps {
+                git 'https://github.com/chaithanya2996/java-maven-code.git'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('artifact') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deployment') {
+            steps {
+                echo 'Code is deploy - actual we need to learn tomcat, using tomcat we deploy'
+            }
+        }
+    }
+}
+
+or
+
+Pipeline as a Code - Running more than one command inside a single stage (Advantages: save time, can run all commands in one stage, reduce length of code)
+===================
+
+pipeline {
+    agent any
+    stages {
+        stage('one') {
+            steps {
+                git 'https://github.com/ReyazShaik/java-project-maven-new.git&#39;
+        sh 'mvn compile'
+        sh 'mvn test'
+        sh 'mvn package'
+            }
+        }
+       
+     
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
