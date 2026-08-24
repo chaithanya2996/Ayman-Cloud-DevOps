@@ -1,0 +1,10 @@
+Docker is Containerization Platform tool 
+
+Docker will comes in 2 ways
+
+1. Enterprise version
+2. Community Version
+
+Open Source 
+Built using Programming Language - GO LANG
+
