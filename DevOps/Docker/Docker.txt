@@ -8,3 +8,90 @@ Docker will comes in 2 ways
 Open Source 
 Built using Programming Language - GO LANG
 
+==========================================================
+Docker:
+================
+
+
+Docker commands
+
+How to Build an Image in Docker
+
+container should be running background
+
+continulsy running 
+
+ctrl + p + q
+
+task:
+----
+lets create a ubunutu container 
+install git, python, nginx
+
+
+docker run -it --name aymanub ubuntu
+apt update 
+apt install git -y
+apt install python -y
+apt install nginx -y
+
+
+if I delete the container, will I get back the container
+
+waht ever operations, i have performed this all lost.
+
+container -> some operations -> image
+
+container lost 
+
+custom image -> n no of containers
+
+
+commit approach -> manual approach:
+==============================
+
+image from docker hub
+
+from that image -> create a container
+
+install packages or work some operations
+
+from that container -> create a new custom image
+
+new custom image -> create a new container -> verify..
+
+how much time ? 
+
+15-20 mins
+
+Automation 
+
+Dockerfile -> Instructions (install packages or work some operations) 
+
+Docker will create a image
+
+Dockerfile
+
+ubuntu
+apt update
+apt install nginx -y
+apt install git -y
+
+
+FROM ubuntu
+RUN apt update 
+RUN apt install nginx -y
+RUN apt install git -y
+
+===================================
+check any os image
+
+install git, java, nginx 
+
+using commit
+using Dockerfile
+
+static website things
+
+
+
