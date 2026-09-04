@@ -149,3 +149,15 @@ create a repo
 static website things
 
 In Azure Publishing Docker images will use ACR, Contianers - Serverless mode -> ACI 
+
+Publishing Images will be done Public Repo : hub.docker.com, nexus, ...
+Publishing Images will be done Private Repo: Azure CLoud, AWS Cloud, Nexus, JFrog, ....
+
+Azure Cloud : Azure Contianer Registry
+
+It consists of custom images
+
+Try to do it in a Azure CLI 
+1. Create an ACR 
+2. Publish the images to ACR
+3. Create an ACI 
