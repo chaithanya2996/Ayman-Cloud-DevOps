@@ -161,3 +161,12 @@ Try to do it in a Azure CLI
 1. Create an ACR 
 2. Publish the images to ACR
 3. Create an ACI 
+==============================================
+Docker Compose:
+
+create a  Docker Server
+
+full stack application / microservies, 
+
+everything will be dumped in one machine, 
+
