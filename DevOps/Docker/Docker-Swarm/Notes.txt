@@ -1,0 +1,97 @@
+Docker Swarm:
+=======================================
+
+Docker 
+
+Inside the VM we install docker cli 
+docker daemon will start work on it 
+it will downlaod the images
+and working with containers by CRUD operations
+
+In One Particular VM/ Server / Instance / Machine
+
+let suppose u dumped ur production workload in One Sever where docker is installed
+in such cases, what will happen
+
+- our server will properly
+- containers are isolated
+- volumes are aviable
+
+
+- what if the server goes off /went off 
+will containers work -> No 
+
+one more server is req to manage 
+
+create one more server install docker 
+create one more server install docker 
+create one more server install docker 
+create one more server install docker 
+
+cluster -> a group of servers 
+
+Docker Swarm = manage containers across multiple Docker Machines
+
+group of server =  install docker = working with containers
+
+Swarm Manager
+Swarm Workers
+
+
+Basic Docker
+
+Docker Host
+|
+<-- Contianer1
+<-- Contianer2
+<-- Contianer3
+
+Docker Swarm
+                    Docker Swarm cluster
+                            |
+            ------------------------------------------
+            |                   |                   |
+        Manager Node         Worker Node 1      Worker Node 2
+        ------------------------------------------
+            |   |                   |                   |
+            App1 App2           APP3 APP4       APP5 APP6 APP7
+
+
+Concepts:
+
+Manager Node:
+- cluster management
+- scheduling containers
+- mantaineing desired state
+- managing services
+- handling worker nodes
+
+Worker Node:
+- Workers run the contianers which are  assisned by manager.
+A worker doesn't normally make scheduling decisions itself.
+
+
+Service?
+
+Scaling?   
+ - 3 replicas  -> 8  Replicas
+Self-Heaaling?
+- desired           current
+  20  Replicas         15 + 5
+
+=========================================
+docker swarm init --advertise-addr 10.0.0.4
+
+docker swarm join --token SWMTKN-1-4amdhnadssd8uoktf4kve4106dc8v6swbe1yfg9acl45fyizoi-41bdgv8hn6f912oroh5cci9k9 10.0.0.4:2377
+
+
+docker node ls
+
+docker service create \
+  --name web1 \
+  --publish published=80,target=81 \
+  nginx
+
+docker service ls
+docker service ps web1
+
