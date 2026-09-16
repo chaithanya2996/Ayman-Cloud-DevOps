@@ -1,0 +1,21 @@
+az vm create \
+  --resource-group rg-swarm \
+  --name swarm-mgr \
+  --image Ubuntu2204 \
+  --size Standard_B2s \
+  --admin-username madhan \
+  --admin-password 'india@123456' \
+  --authentication-type password \
+  --public-ip-sku Standard \
+  --nsg-rule SSH
+
+  az vm create \
+  --resource-group rg-swarm \
+  --name swarm-w1 \
+  --image Ubuntu2204 \
+  --size Standard_B2s \
+  --admin-username madhan \
+  --admin-password 'india@123456' \
+  --authentication-type password \
+  --public-ip-sku Standard \
+  --nsg-rule SSH
