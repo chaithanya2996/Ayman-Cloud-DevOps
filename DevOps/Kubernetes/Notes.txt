@@ -358,3 +358,180 @@ The configuration of kubectl is in the $HOME/.kube directory.
 -- kubectl get nodes
 
 -- kubectl get pods
+
+PODS :
+=======
+ 
+It is a smallest unit of deployment in K8's.
+It is a group of containers.
+Pods are ephemeral (short living objects)
+Mostly we can use single container inside a pod but if we required, we can create multiple containers inside a same pod.
+when we create a pod, containers inside pods can share the same network namespace, and can share the same storage volumes .
+While creating pod, we must specify the image, along with any necessary configuration and resource limits.
+K8's cannot communicate with containers, they can communicate with only pods.
+
+We can create this pod in two ways,
+
+1. Imperative(command)
+
+2. Declarative (Manifest file) - can be reuse - in real time we go with declarative
+
+By default, one pod has one container, if required we can create, if you create multiple containers in a single pod, all containers inside the pods will share the same volume
+
+
+1. Imperative(command)
+-----------------------
+
+Example:
+--------
+
+-- kubectl run pod1 --image nginx    [Creating  pod with name pod1 with image nginx]
+
+-- kubectl get pods/pod/po           [To get the pods , can use pods/po/pods also]
+
+-- kubectl get pod -o wide           [To get details about the pod]
+
+-- kubectl describe pod pod1         [To get more details about the pod]
+
+-- kubectl delete pod pod1           [To delete the pod]
+
+Example 2:
+---------
+
+-- kubectl run madhan --image nginx  [This will create a pod name madhan , with httpd image ]
+
+-  kubectl get pods
+
+-- kubectl logs madhan  
+
+-- kubectl exec -it madhan -- /bin/bash   [to connect to the pod inside]
+   cd /usr/share/nginx/html
+   cat index.html
+
+-- kubectl delete pod madhan   [This will delete the pod madhan]
+
+
+The above approach we don't do, because no need to create PODS manually , so lets go for manifest declarative approach
+
+
+================================================
+
+2. Declarative (Manifest file)
+-----------------------------
+
+In manifest file we have these mandatory parameters
+
+---------------------
+apiVersion:
+kind:
+metadata:
+spec:
+---------------------
+
+What is apiVersion?
+-------------------
+
+apiVersion: Specifies the API version used for the Deployment object. apps/v1 is the stable API version for managing deployments.
+            Depending on Kubernetes object we want to create, there is a corresponding code library we want to use.
+            apiVersion refers to Code Library
+            apiVersion will help to create the mentioned object
+
+Examples:
+---------
+
+POD : v1
+Service: v1
+NameSpace: v1
+Secrets: v1
+Replicaset: apps/v1
+Deployment: apps/v1
+jobs: batch/v1
+
+
+
+kubectl api-versions
+
+What is kind ?
+--------------
+
+Refers to Kubernetes object which we want to create.
+
+Example:
+--------
+kind: Pod
+kind: Deployment
+kind: Service
+kind: Ingress
+kind: job
+
+What is metadata?
+----------------
+
+Additional information about the Kubernetes object like name, labels etc
+
+name: The name of the Deployment/Pod/Service etc.
+labels: Key-value pairs used for organizing and selecting objects(pods)
+
+
+What is spec?
+------------
+
+Contains docker container related information like, image name, environment variables , port mapping etc
+
+How many number of pods (Replica)
+About container and that should run on which image
+On which port it should expose
+Labeling the entire deployment etc
+
+
+
+Sample manifest file
+--------------------
+
+apiVersion: v1
+kind: Pod  -- creating pod
+metadata:
+  name: pod1 -- name of the pod
+spec:  -- specifications
+  containers:
+    - image: nginx  -- image  name
+      name: cont1 -- container name
+
+-----------------
+
+vi pod.yml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod1
+spec:
+  containers:
+    - image: nginx
+      name: cont1
+
+-- kubectl create -f pod.yml    [ To create a pod using manifest]
+
+-- kubectl describe pod pod1    [ To describe pod ]
+
+-- kubectl delete pod pod1      [ To delete the pod ]
+
+DRAWBACK: once pod is deleted we can't retrieve the pod.
+
+If any pod deleted, it is deleted, no HA, for HA use ReplicaSET also called RS
+
+KUBECOLOR:
+
+wget https://github.com/hidetatz/kubecolor/releases/download/v0.0.25/kubecolor_0.0.25_Linux_x86_64.tar.gz
+tar -zxvf kubecolor_0.0.25_Linux_x86_64.tar.gz
+./kubecolor
+chmod +x kubecolor
+mv kubecolor /usr/local/bin/
+
+kubecolor get po
+
+-- kubectl create -f pod.yml  
+
+-- kubecolor get po
+
+=======================================================================================================
