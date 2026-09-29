@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: ayman-rs  # ---------- Name of the Replicaset
+  labels:
+    app: ayman  
+spec:     #  this spec is for PODS
+  replicas: 1  # replicas
+  selector:
+    matchLabels:
+      app: ayman  # -Ensures only pods with label app: ayman are part of this Replicaset. if there is any pod with label ayman, it will be a part of this replicaset
+  template:
+    metadata:
+      labels:
+        app: ayman
+    spec:                # this spec is for containers
+      containers:
+        - name: myapp
+          image: chaithugvsm/ayman-repo:v1
