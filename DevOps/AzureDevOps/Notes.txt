@@ -10,3 +10,4 @@ Deploy this Artifact into Azure Services
 
 VM, AppService, Docker (ACR,ACI,), Kubernetes (AKS)
 
+Pipelines
