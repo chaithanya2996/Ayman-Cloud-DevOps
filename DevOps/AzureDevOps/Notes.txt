@@ -1,0 +1,12 @@
+What is Azure DevOps?
+
+
+CICD process 
+Built a DotNet application 
+Push them into Azure Repos
+Build a Azure CI Pipeline
+Artifact Generated
+Deploy this Artifact into Azure Services
+
+VM, AppService, Docker (ACR,ACI,), Kubernetes (AKS)
+
