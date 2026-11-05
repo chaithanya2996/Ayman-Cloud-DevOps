@@ -6,6 +6,8 @@ metadata:
     app: ayman
 spec: #  this spec is for PODS
   replicas: 1 # replicas
+  strategy: 
+    type: Recreate
   selector:
     matchLabels:
       app: ayman # -Ensures only pods with label app: ayman are part of this Replicaset. if there is any pod with label ayman, it will be a part of this replicaset
